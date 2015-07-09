@@ -2,10 +2,10 @@
 // It permits easy reloading of the file, so autoload can reload it
 // if it has changed.
 
-var path = require('path');
+var path = require("path");
 
 module.exports = function (core, rootPath) {
-    var configFile = path.join(rootPath, 'config.js');
+    var configFile = path.join(rootPath, "config.js");
 
     core.config = {};
     var initialLoad = true;
@@ -28,9 +28,9 @@ module.exports = function (core, rootPath) {
         core.config = config;
     }
 
-    core.on('configChange', function () {
+    core.on("configChange", function () {
         reloadConfig();
-        core.emit('configLoad');
+        core.emit("configLoad");
     });
 
     reloadConfig();
