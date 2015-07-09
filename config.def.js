@@ -7,7 +7,6 @@ module.exports = {
         nickname: 'nobody',
         realname: 'nobody',
         //password: 'swordfish',
-        //operator: true,
 
         //debug: true,
     },

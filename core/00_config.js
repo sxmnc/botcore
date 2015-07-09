@@ -22,7 +22,6 @@ module.exports = function (core, rootPath) {
             core.nickname = config.core.nickname;
             core.realname = config.core.realname;
             core.password = config.core.password;
-            core.operator = config.core.operator;
             core.debug = config.core.debug;
         }
         delete config.core;
