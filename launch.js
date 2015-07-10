@@ -7,8 +7,7 @@ var moment = require("moment");
 var core = new events.EventEmitter();
 core.startTime = moment();
 
-var coreModulesGlob = path.join(__dirname, "core", "*.js");
-glob.sync(coreModulesGlob).forEach(function (path) {
+glob.sync(path.join(__dirname, "core", "*.js")).forEach(function (path) {
     var module = require(path);
     module(core, __dirname);
 });
