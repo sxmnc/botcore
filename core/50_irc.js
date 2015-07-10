@@ -43,7 +43,7 @@ module.exports = function (core) {
         this.emit("pub", nick, text, msg);
     });
 
-    // Shorthand method to say messages on the bot's own server.
+    // Shorthand method to say messages on the bot's own channel.
     core.irc.sayPub = function (msg) {
         this.say(core.channel, msg);
     };
